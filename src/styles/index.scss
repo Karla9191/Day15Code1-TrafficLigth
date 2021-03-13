@@ -11,3 +11,59 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.button{
+
+    text-align: center;
+    margin: 800px;
+}
+.btn-1{
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    background-color: red;
+    opacity: 0.4;
+    color:red;
+    border-color: red;
+}
+
+.btn-2{
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    background-color: yellow;
+    opacity: 0.4;
+    color:yellow;
+    border-color: yellow;
+}
+
+.btn-3{
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+     background-color: green;
+     opacity: 0.4;
+     color:green;
+     border-color: green;
+}
+
+
+.btn-1:hover {opacity: 1}
+.btn-2:hover {opacity: 1}
+.btn-3:hover {opacity: 1}
+
+.btn-1:active {color:red}
+.btn-2:active {color:yellow}
+.btn-3:active {color:green}
