@@ -15,20 +15,27 @@
 .button{
 
     text-align: center;
-    margin: 800px;
+    
+}
+
+.btnAll{
+
+    text-align: center;
+    padding-left: 600px;
+    
 }
 .btn-1{
     border: none;
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    margin: 10px;
     cursor: pointer;
     display: block;
     background-color: red;
     opacity: 0.4;
     color:red;
     border-color: red;
+    
 }
 
 .btn-2{
@@ -36,7 +43,6 @@
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    margin: 10px;
     cursor: pointer;
     display: block;
     background-color: yellow;
@@ -50,7 +56,6 @@
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    margin: 10px;
     cursor: pointer;
     display: block;
      background-color: green;
@@ -67,3 +72,9 @@
 .btn-1:focus {color:red}
 .btn-2:focus {color:yellow}
 .btn-3:focus {color:green}
+
+.img{
+
+    width: 150px;
+    height: 180px;
+}
