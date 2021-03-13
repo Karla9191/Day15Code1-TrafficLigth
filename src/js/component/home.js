@@ -35,17 +35,15 @@ export function Home() {
 	}
 
 	return (
-
-       
 		<div className="button text-center mt-5">
-			 <p>
-			<img className="img" src={trafficImage} />
-		    </p>
-            <div className="btnAll">
-			<button className="btn-1 btn-sm" onClick={optionA}></button>
-			<button className="btn-2 btn-sm" onClick={optionB}></button>
-			<button className="btn-3 btn-sm" onClick={optionC}></button>
-            </div>
+			<p>
+				<img className="img" src={trafficImage} />
+			</p>
+			<div className="btnAll">
+				<button className="btn-1 btn-sm" onClick={optionA}></button>
+				<button className="btn-2 btn-sm" onClick={optionB}></button>
+				<button className="btn-3 btn-sm" onClick={optionC}></button>
+			</div>
 		</div>
 	);
 }
