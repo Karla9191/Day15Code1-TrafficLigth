@@ -30,7 +30,6 @@
     display: block;
     background-color: red;
     opacity: 0.4;
-    color:red;
     border-color: red;
 }
 
@@ -43,7 +42,6 @@
     display: block;
     background-color: yellow;
     opacity: 0.4;
-    color:yellow;
     border-color: yellow;
 }
 
@@ -56,7 +54,6 @@
     display: block;
      background-color: green;
      opacity: 0.4;
-     color:green;
      border-color: green;
 }
 
@@ -64,10 +61,11 @@
 .btn-1:hover {opacity: 1}
 .btn-2:hover {opacity: 1}
 .btn-3:hover {opacity: 1}
-
+/*
 .btn-1:focus {color:red}
 .btn-2:focus {color:yellow}
 .btn-3:focus {color:green}
+*/
 
 .btn-1:active {color:red}
 .btn-2:active {color:yellow}
