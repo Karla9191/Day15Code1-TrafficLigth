@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
-import rigoImage from "../../img/traffic-light.png";
+import trafficImage from "../../img/traffic-light.png";
 
 //create your first component
 export function Home() {
@@ -36,6 +36,9 @@ export function Home() {
 
 	return (
 		<div className="button text-center mt-5">
+			<p>
+				<img src={trafficImage} />
+			</p>
 			<button className="btn-1 btn-sm" onClick={optionA}></button>
 			<button className="btn-2 btn-sm" onClick={optionB}></button>
 			<button className="btn-3 btn-sm" onClick={optionC}></button>
