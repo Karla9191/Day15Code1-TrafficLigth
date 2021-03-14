@@ -15,6 +15,11 @@
 body{
 
     background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/11/traffic-light-310094_960_720.png");
+    background-color: transparent;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center center;
+
 }
 
 .button{
@@ -23,29 +28,31 @@ body{
 
 .btnAll{
     text-align: center;
-    padding-left: 430px;
+    padding-left: 850px;
+    padding-top: 170px;
 }
 
 .btn-1{
     border: none;
     font-size: xx-large;
     border-radius: 80px;
-    padding: 20px;
+    padding: 84px;
     display: block;
     background-color: red;
     opacity: 0.4;
-    margin-top:20px
+   
+    
 }
 
 .btn-2{
     border: none;
     font-size: xx-large;
-    border-radius: 80px;
-    padding: 20px;
+    border-radius: 83px;
+    padding: 83px;
     display: block;
     background-color: yellow;
     opacity: 0.4;
-    margin-top:20px
+    margin-top:45px;
   
 }
 
@@ -53,11 +60,11 @@ body{
     border: none;
     font-size: xx-large;
     border-radius: 80px;
-    padding: 20px;
+    padding: 83px;
     display: block;
     background-color: green;
     opacity: 0.4;
-    margin-top:20px
+    margin-top:48px;
   
 }
 
