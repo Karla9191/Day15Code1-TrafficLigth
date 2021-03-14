@@ -12,6 +12,11 @@
 
 */
 
+body{
+
+    background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/11/traffic-light-310094_960_720.png");
+}
+
 .button{
     text-align: center;
 }
@@ -26,11 +31,10 @@
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    cursor: pointer;
     display: block;
     background-color: red;
     opacity: 0.4;
-    border-color: red;
+    margin-top:20px
 }
 
 .btn-2{
@@ -38,11 +42,11 @@
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    cursor: pointer;
     display: block;
     background-color: yellow;
     opacity: 0.4;
-    border-color: yellow;
+    margin-top:20px
+  
 }
 
 .btn-3{
@@ -50,22 +54,22 @@
     font-size: xx-large;
     border-radius: 80px;
     padding: 20px;
-    cursor: pointer;
     display: block;
-     background-color: green;
-     opacity: 0.4;
-     border-color: green;
+    background-color: green;
+    opacity: 0.4;
+    margin-top:20px
+  
 }
 
-
+/*
 .btn-1:hover {opacity: 1}
 .btn-2:hover {opacity: 1}
 .btn-3:hover {opacity: 1}
-/*
+
 .btn-1:focus {color:red}
 .btn-2:focus {color:yellow}
 .btn-3:focus {color:green}
-*/
+
 
 .btn-1:active {color:red}
 .btn-2:active {color:yellow}
@@ -74,6 +78,7 @@
 .btn-1:visited {color:red}
 .btn-2:visited {color:yellow}
 .btn-3:visited {color:green}
+*/
 
 .img{
     margin: auto;
