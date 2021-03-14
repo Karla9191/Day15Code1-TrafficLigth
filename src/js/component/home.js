@@ -6,6 +6,7 @@ import trafficImage from "../../img/traffic-light.png";
 
 //create your first component
 export function Home() {
+	const [count, setCount] = useState(0);
 	let [option1, setOption1] = useState("Apagado");
 	let [option2, setOption2] = useState("Apagado");
 	let [option3, setOption3] = useState("Apagado");
@@ -41,6 +42,8 @@ export function Home() {
 				<button className="btn-2 btn-sm" onClick={optionB}></button>
 				<button className="btn-3 btn-sm" onClick={optionC}></button>
 			</div>
+			<p>You clicked {count} times</p>
+			<button onClick={() => setCount(count + 1)}>Click me</button>
 		</div>
 	);
 }
