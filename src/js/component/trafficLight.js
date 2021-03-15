@@ -1,36 +1,37 @@
 import React, { useState, useEffect } from "react";
+document.title = "Traffic Light";
 
 //create your first component
 export function TrafficLight() {
-	let [color1, setColor1] = useState("off");
-	let [color2, setColor2] = useState("off");
-	let [color3, setColor3] = useState("off");
+	let [color1, setColor1] = useState(false);
+	let [color2, setColor2] = useState(false);
+	let [color3, setColor3] = useState(false);
 
 	function change1() {
-		if (color1 == "off") {
-			setColor1("on");
-			setColor2("off");
-			setColor3("off");
+		if (color1 == false) {
+			setColor1(true);
+			setColor2(false);
+			setColor3(false);
 		} else {
-			setColor1("off");
+			setColor1(false);
 		}
 	}
 	function change2() {
-		if (color2 == "off") {
-			setColor1("off");
-			setColor2("on");
-			setColor3("off");
+		if (color2 == false) {
+			setColor1(false);
+			setColor2(true);
+			setColor3(false);
 		} else {
-			setColor2("off");
+			setColor2(false);
 		}
 	}
 	function change3() {
-		if (color3 == "off") {
-			setColor1("off");
-			setColor2("off");
-			setColor3("on");
+		if (color3 == false) {
+			setColor1(false);
+			setColor2(false);
+			setColor3(true);
 		} else {
-			setColor3("off");
+			setColor3(false);
 		}
 	}
 
@@ -38,7 +39,8 @@ export function TrafficLight() {
 		<div className="button text-center mt-5">
 			<div className="btnAll">
 				<div>
-					<button className={"btn-1"} onClick={change1}></button>
+					<button className={"btn-1"} onClick={change2}></button>
+					{color1 ? <ShowColor /> : null}
 				</div>
 				<div>
 					<button className={"btn-2"} onClick={change2}></button>
@@ -49,4 +51,10 @@ export function TrafficLight() {
 			</div>
 		</div>
 	);
+
+	function ShowColor() {
+		const [color, setColor] = useState("red");
+		console.log("here");
+		return <div style={{ background: color }} />;
+	}
 }
