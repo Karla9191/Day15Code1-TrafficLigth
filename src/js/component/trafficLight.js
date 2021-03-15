@@ -1,46 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //create your first component
 export function TrafficLight() {
-	const [count, setCount] = useState(0);
+	let [color1, setColor1] = useState("off");
+	let [color2, setColor2] = useState("off");
+	let [color3, setColor3] = useState("off");
 
-	let [option1, setOption1] = useState("Apagado");
-	let [option2, setOption2] = useState("Apagado");
-	let [option3, setOption3] = useState("Apagado");
-
-	function optionA() {
-		if (option1 == "Apagado") {
-			setOption1("Encendido");
-			setOption2("Apagado");
-			setOption3("Apagado");
+	function change1() {
+		if (color1 == "off") {
+			setColor1("on");
+			setColor2("off");
+			setColor3("off");
+		} else {
+			setColor1("off");
 		}
 	}
-
-	function optionB() {
-		if (option2 == "Apagado") {
-			setOption1("Apagado");
-			setOption2("Encendido");
-			setOption3("Pagado");
+	function change2() {
+		if (color2 == "off") {
+			setColor1("off");
+			setColor2("on");
+			setColor3("off");
+		} else {
+			setColor2("off");
 		}
 	}
-
-	function optionC() {
-		if (option3 == "Apagado") {
-			setOption1("Apagado");
-			setOption2("Apagado");
-			setOption3("Encendido");
+	function change3() {
+		if (color3 == "off") {
+			setColor1("off");
+			setColor2("off");
+			setColor3("on");
+		} else {
+			setColor3("off");
 		}
 	}
 
 	return (
 		<div className="button text-center mt-5">
 			<div className="btnAll">
-				<button className="btn-1 btn-sm" onClick={option1}></button>
-				<button className="btn-2 btn-sm" onClick={option2}></button>
-				<button className="btn-3 btn-sm" onClick={option3}></button>
+				<div>
+					<button className={"btn-1"} onClick={change1}></button>
+				</div>
+				<div>
+					<button className={"btn-2"} onClick={change2}></button>
+				</div>
+				<div>
+					<button className={"btn-3"} onClick={change3}></button>
+				</div>
 			</div>
-			<p>You clicked {count} times</p>
-			<button onClick={() => setCount(count + 1)}>Click me</button>
 		</div>
 	);
 }
