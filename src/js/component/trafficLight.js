@@ -35,9 +35,9 @@ export function TrafficLight() {
 	return (
 		<div className="button text-center mt-5">
 			<div className="btnAll">
-				<button className="btn-1 btn-sm" onClick={}></button>
-				<button className="btn-2 btn-sm" onClick={}></button>
-				<button className="btn-3 btn-sm" onClick={}></button>
+				<button className="btn-1 btn-sm" onClick={option1}></button>
+				<button className="btn-2 btn-sm" onClick={option2}></button>
+				<button className="btn-3 btn-sm" onClick={option3}></button>
 			</div>
 			<p>You clicked {count} times</p>
 			<button onClick={() => setCount(count + 1)}>Click me</button>
