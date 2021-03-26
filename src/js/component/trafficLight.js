@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 document.title = "Traffic Light";
 
 //create your first component
@@ -39,7 +40,7 @@ export function TrafficLight() {
 		<div className="button text-center mt-5">
 			<div className="btnAll">
 				<div>
-					<button className={"btn-1"} onClick={change2}></button>
+					<button className={"btn-1"} onClick={change1}></button>
 					{color1 ? <ShowColor /> : null}
 				</div>
 				<div>
@@ -52,9 +53,5 @@ export function TrafficLight() {
 		</div>
 	);
 
-	function ShowColor() {
-		const [color, setColor] = useState("red");
-		console.log("here");
-		return <div style={{ background: color }} />;
-	}
+	function ShowColor() {}
 }
