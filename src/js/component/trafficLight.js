@@ -41,10 +41,10 @@ export function TrafficLight() {
 			<div className="btnAll">
 				<div>
 					<button className={"btn-1"} onClick={change1}></button>
-					{color1 ? <ShowColor /> : null}
+					{color1 ? <ShowColor /> : "red"}
 				</div>
 				<div>
-					<button className={"btn-2"} onClick={change2}></button>
+					<button className={"btn-2"} onClick={change3}></button>
 				</div>
 				<div>
 					<button className={"btn-3"} onClick={change3}></button>

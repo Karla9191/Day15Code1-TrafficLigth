@@ -12,6 +12,7 @@
 
 */
 
+/*
 body{
 
     background-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/11/traffic-light-310094_960_720.png");
@@ -21,10 +22,11 @@ body{
     background-position:center center;
 
 }
-
+*/
 .button{
     text-align: center;
 }
+
 
 .btnAll{
     text-align: center;
@@ -35,7 +37,6 @@ body{
 
 
 .btn-1{
-
     border: none;
     font-size: xx-large;
     border-radius: 80px;
@@ -43,9 +44,17 @@ body{
     display: block;
     background-color: red;
     opacity: 0.4;
-  
 }
 
+
+.btn-11{
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 84px;
+    display: block;
+    background-color: red;
+}
 
 
 .btn-2{
