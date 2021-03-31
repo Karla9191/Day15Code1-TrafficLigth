@@ -37,21 +37,23 @@ export function TrafficLight() {
 	}
 
 	return (
-		<div className="button text-center mt-5">
-			<div className="btnAll">
-				<div>
-					<button className={"btn-1"} onClick={change1}></button>
-					{color1 ? <ShowColor /> : null}
-				</div>
-				<div>
-					<button className={"btn-2"} onClick={change3}></button>
-				</div>
-				<div>
-					<button className={"btn-3"} onClick={change3}></button>
-				</div>
-			</div>
+		<div className="container text-center mt-5">
+			<div
+				className={"btn-R lightR"}
+				color={"red"}
+				onClick={change1}></div>
+			<div
+				className={"btn-Y lightY"}
+				color={"yellow"}
+				onClick={change3}></div>
+			<div
+				className={"btn-G lightG"}
+				color={"green"}
+				onClick={change3}></div>
 		</div>
 	);
-
+	/*
+    {color1 ? <ShowColor /> : null}
 	function ShowColor() {}
+    */
 }
