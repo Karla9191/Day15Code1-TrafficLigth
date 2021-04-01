@@ -32,36 +32,13 @@ body{
 
 
 .container{
-    height: 750px;
+    height: 670px;
     width: 250px;
-    background-color: black;
+    background-color: #363838;
     border-radius: 50px;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px;
-}
-
-.btn-17{
-    border: none;
-    font-size: xx-large;
-    border-radius: 80px;
-    padding: 84px;
-    display: block;
-    opacity: 0.4;
-    position: relative;
-    background-color:rgba(0, 0, 0, 0.3);
-    
-}
-.btn-17:after{
-    border: none;
-    font-size: xx-large;
-    border-radius: 80px;
-    padding: 84px;
-    display: block;
-    opacity: 0.4;
-    position: relative;
-    border-radius: 4px solid rgba(255, 255, 255, 0.6);
-
+    padding: 40px;
 }
 
 
@@ -85,8 +62,20 @@ body{
     padding: 84px;
     display: block;
     background-color: red;
-    opacity: 0.4;
+    opacity: 0.3;
     position: relative;
+}
+
+.btn-RLight{
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 84px;
+    display: block;
+    background-color: red;
+    opacity: 0.8;
+    position: relative;
+    box-shadow: 0 0 20px 5px red;
 }
 
 
@@ -98,12 +87,26 @@ body{
     padding: 83px;
     display: block;
     background-color: yellow;
-    opacity: 0.4;
+    opacity: 0.3;
     margin-top:45px;
     position: relative;
   
 }
 
+.btn-YLight{
+ 
+    border: none;
+    font-size: xx-large;
+    border-radius: 83px;
+    padding: 83px;
+    display: block;
+    background-color: yellow;
+    opacity: 0.8;
+    margin-top:45px;
+    position: relative;
+    box-shadow: 0 0 20px 5px yellow;
+  
+}
 .btn-G{
    
     border: none;
@@ -112,11 +115,24 @@ body{
     padding: 83px;
     display: block;
     background-color: green;
-    opacity: 0.4;
+    opacity: 0.3;
     margin-top:48px;
    
 }
 
+.btn-GLight{
+   
+    border: none;
+    font-size: xx-large;
+    border-radius: 80px;
+    padding: 83px;
+    display: block;
+    background-color: green;
+    opacity: 0.8;
+    margin-top:48px;
+    box-shadow: 0 0 20px 5px green;
+   
+}
 .img{
     margin: auto;
     width: 150px;

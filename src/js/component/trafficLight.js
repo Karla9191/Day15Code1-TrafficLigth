@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 document.title = "Traffic Light";
 
@@ -37,19 +37,10 @@ export function TrafficLight() {
 	}
 
 	return (
-		<div className="container text-center mt-5">
-			<div
-				className={"btn-R lightR"}
-				color={"red"}
-				onClick={change1}></div>
-			<div
-				className={"btn-Y lightY"}
-				color={"yellow"}
-				onClick={change3}></div>
-			<div
-				className={"btn-G lightG"}
-				color={"green"}
-				onClick={change3}></div>
+		<div className="container">
+			<div className={"btn-R"} onClick={change1}></div>
+			<div className={"btn-Y"} onClick={change3}></div>
+			<div className={"btn-G"} onClick={change3}></div>
 		</div>
 	);
 	/*
