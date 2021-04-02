@@ -4,15 +4,15 @@ document.title = "Traffic Light";
 
 //create your first component
 export function TrafficLight() {
-	let [colorRed, setColorRed] = useState("red");
-	let [colorYellow, setColorYellow] = useState("yellow");
-	let [colorGreen, setColorGreen] = useState("green");
+	let [colorRed, setColorRed] = useState(false);
+	let [colorYellow, setColorYellow] = useState(false);
+	let [colorGreen, setColorGreen] = useState(false);
 
 	function changeRed() {
 		if (colorRed == false) {
 			setColorRed(true);
 			setColorYellow(false);
-			setColorGreen(true);
+			setColorGreen(false);
 		} else {
 			setColorRed(false);
 		}
