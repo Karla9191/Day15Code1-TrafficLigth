@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 document.title = "Traffic Light";
 
+export default class TrafficLight extends React.Component {
+	render() {
+		return <div>Hello World</div>;
+	}
+}
+
+/*
 //create your first component
 export function TrafficLight() {
 	let [colorRed, setColorRed] = useState(false);
@@ -45,3 +52,4 @@ export function TrafficLight() {
 		</div>
 	);
 }
+*/

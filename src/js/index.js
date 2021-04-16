@@ -9,9 +9,6 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
-
-//import your own components
 import { TrafficLight } from "./component/trafficLight.js";
 
 //render your react application
