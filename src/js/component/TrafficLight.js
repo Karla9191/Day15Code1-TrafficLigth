@@ -9,7 +9,6 @@ export default class TrafficLight extends React.Component {
 	}
 
 	render() {
-		console.log(this.state);
 		let redNewClass = "";
 		if (this.state.clickedLight == "red") redNewClass = "selected";
 		let yellowNewClass = "";
@@ -41,7 +40,6 @@ export default class TrafficLight extends React.Component {
 		);
 	}
 }
-
 
 /*
 //create your first component
