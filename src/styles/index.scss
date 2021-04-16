@@ -30,6 +30,37 @@ body{
     margin: 0;
 }
 
+#trafficTop{
+    background-color: black;
+    width: 10px;
+    height: 70px;
+    margin-left: 82px;
+}
+
+#contenedor{
+    background-color: black;
+    width: 65px;
+    height: 180px;
+    margin-left: 50px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.light{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+    &.red { background-color: #990000; }
+    &.yellow { background-color: #CC6600; }
+    &.green { background-color: #009933; }
+    &.selected { box-shadow: #f8ffcc 0px 0px 50px 20px; }
+
+}
+
+/*
 
 .container{
     height: 670px;
@@ -63,3 +94,4 @@ body{
     &.green {background-color: green;}
     &.selected {box-shadow: 0 0 50px 20px yellow;}
 }
+*/
