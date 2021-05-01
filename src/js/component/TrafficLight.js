@@ -36,9 +36,25 @@ export function TrafficLight() {
 
 	return (
 		<div className="container">
-			<div className={"red btnRYG"} onClick={changeRed}></div>
-			<div className={"yellow btnRYG "} onClick={changeYellow}></div>
-			<div className={"green btnRYG "} onClick={changeGreen}></div>
+			<div
+				className={
+					colorRed == true ? "red btnRYG selected" : "red btnRYG"
+				}
+				onClick={changeRed}></div>
+			<div
+				className={
+					colorYellow == true
+						? "yellow btnRYG selected"
+						: "yellow btnRYG "
+				}
+				onClick={changeYellow}></div>
+			<div
+				className={
+					colorGreen == true
+						? "green btnRYG selected"
+						: "green btnRYG"
+				}
+				onClick={changeGreen}></div>
 		</div>
 	);
 }
